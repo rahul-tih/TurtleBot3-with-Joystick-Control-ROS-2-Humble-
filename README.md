@@ -1,11 +1,13 @@
-#Terminal1:
+#Terminal 1:
+
 ssh ubuntu@192.168.0.229 # Your SSH IP
 
 export TURTLEBOT3_MODEL=burger
 
 ros2 launch turtlebot3_bringup robot.launch.py
 
-#Terminal2:
+#Terminal 2:
+
 ssh ubuntu@92.168.0.229 # Your SSH IP
 
 export TURTLEBOT3_MODEL=burger
@@ -16,13 +18,16 @@ sudo chmod +rw /dev/input/event0
 
 sudo chmod +rw /dev/input/event0
 
-#Terminal3:
+ros2 run joy joy_node
+
+#Terminal 3:
 
 ssh ubuntu@92.168.0.229
 
 export TURTLEBOT3_MODEL=burger
 
 ros2 run stick_control stick_control
+
 
 
 #To find the SSH IP 
